@@ -39,5 +39,8 @@ Vagrant.configure("2") do |config|
   # Portainer installation
   config.vm.provision :shell, path: "./docker/portainer.sh", run: "once"
 
+  # SQL Server 2017 installation
+  config.vm.provision :shell, path: "./docker/sqlserver.sh", run: "once"
+
     
 end
